@@ -1,5 +1,6 @@
-package com.stealthydev.open;
+package com.stealthydev.open.ghostio;
 
+import com.stealthydev.open.ghostio.GhostIoApplication;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.SpringApplicationConfiguration;
