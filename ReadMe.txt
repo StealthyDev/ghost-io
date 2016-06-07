@@ -10,3 +10,4 @@ Project aimed at exposing a web interface for triggering input events
     * CRUD
   * Show layout screen
   * Enhance trigger API
+  * Travis-CI for builds
