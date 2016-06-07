@@ -1,4 +1,4 @@
-package com.stealthydev.open.ghostio;
+package com.stealthydev.open.ghostio.service;
 
 import com.stealthydev.open.ghostio.model.TriggerRequest;
 import com.sun.glass.events.KeyEvent;
