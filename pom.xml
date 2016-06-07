@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.stealthydev.open</groupId>
-	<artifactId>ghostio</artifactId>
+	<artifactId>ghost-io</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>ghostio</name>
+	<name>ghost-io</name>
 	<description>Fire input events using web interface</description>
 
 	<parent>
