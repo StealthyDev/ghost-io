@@ -1,4 +1,49 @@
-<link rel="stylesheet" href="/scripts/lib/bootstrap4/css/bootstrap.css"/>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="/scripts/lib/bootstrap4/css/bootstrap.css">
+    <link rel="stylesheet" href="/scripts/GhostStyles.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="row margin-top-md">
+        <div class="col-xl-4">
+            x
+        </div>
+        <div class="col-xl-4">
+            <div class="input-group">
+                <span class="input-group-addon">Landing Gear</span>
+                <span class="input-group-btn">
+                    <button class="btn btn-info" type="button">Up</button>
+                    <button class="btn btn-warning" type="button">Down</button>
+                </span>
+            </div>
+        </div>
+        <div class="col-xl-4">
+            x
+        </div>
+    </div>
+    <div class="row margin-top-md">
+        <div class="col-xl-4">
+            <input type="text" value="0" class="dial"/>
+        </div>
+        <div class="col-xl-4">
+            <input class="dial" data-display-margin-top="20px" data-width="180" data-height="180" data-angleOffset="50" data-angleArc="260" value="0"/>
+        </div>
+        <div class="col-xl-4">
+            <input type="text" value="0" class="dial"/>
+        </div>
+    </div>
+</div>
+
+<br/><br/>
+
+
 <script src="/scripts/lib/jquery-2.2.4.js"></script>
 <script src="/scripts/lib/jquery.kontrol.js"></script>
 <script src="/scripts/lib/tether/js/tether.js"></script>
@@ -6,23 +51,8 @@
 
 <script src="/scripts/LayoutIntegration.js"></script>
 
-<div class="btn-group" data-toggle="buttons">
-    <label class="btn btn-primary active">
-        <input type="radio" name="options" id="option1" autocomplete="off" checked> Radio 1 (preselected)
-    </label>
-    <label class="btn btn-primary">
-        <input type="radio" name="options" id="option2" autocomplete="off"> Radio 2
-    </label>
-    <label class="btn btn-primary">
-        <input type="radio" name="options" id="option3" autocomplete="off"> Radio 3
-    </label>
-</div>
-
-
-<input type="text" value="0" class="dial"/>
-<input class="dial" data-display-margin-top="20px" data-width="180" data-height="180" data-angleOffset="50" data-angleArc="260" value="0"/>
-
-
+</body>
+</html>
 <!--
 
 Landing gear
