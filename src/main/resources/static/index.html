@@ -1,1 +1,7 @@
-<input onkeypress="return false"/>
+<input onkeypress="javascript: logKey(event);"/>
+
+<script>
+    function logKey(event) {
+        console.log(event);
+    }
+</script>
