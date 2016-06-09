@@ -26,8 +26,8 @@ public class LayoutService {
 
     private List<Layout> layouts = new ArrayList<>();
 
-    private static final String LAYOUTS_FOLDER = "layouts";
-    private static final String MAPPING_FILE = "mapping.json";
+    public static final String LAYOUTS_FOLDER = "layouts";
+    public static final String MAPPING_FILE = "mapping.json";
 
     @PostConstruct
     public void refreshLayouts() {

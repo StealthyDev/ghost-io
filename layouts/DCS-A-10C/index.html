@@ -9,39 +9,190 @@
     <link rel="stylesheet" href="/scripts/GhostStyles.css">
 </head>
 <body>
-
 <div class="container">
-    <div class="row margin-top-md">
-        <div class="col-xl-4">
-            x
-        </div>
-        <div class="col-xl-4">
-            <div class="input-group">
-                <span class="input-group-addon">Landing Gear</span>
-                <span class="input-group-btn">
-                    <button class="btn btn-info" type="button">Up</button>
-                    <button class="btn btn-warning" type="button">Down</button>
-                </span>
+    <div class="row margin-top-sm">
+        <div class="col-sm-5">
+            <div class="card card-block">
+                <h4 class="card-title">General</h4>
+                <button class="btn btn-danger form-control" type="button">Emergency Jettison</button>
+
+                <div class="input-group margin-top-xs">
+                    <span class="input-group-addon form-control">Gear</span>
+                    <span class="input-group-btn">
+                        <button class="btn btn-info btn-fixed-lg" type="button">Up</button>
+                        <button class="btn btn-warning btn-fixed-lg" type="button">Down</button>
+                    </span>
+                </div>
+
+                <div class="input-group margin-top-xs">
+                    <span class="input-group-addon form-control">Jammer</span>
+                    <span class="input-group-btn">
+                        <button class="btn btn-info btn-fixed-lg" type="button">ON</button>
+                        <button class="btn btn-warning btn-fixed-lg" type="button">OFF</button>
+                    </span>
+                </div>
+                <div class="input-group margin-top-xs">
+                    <span class="input-group-addon form-control">RWR</span>
+                    <span class="input-group-btn">
+                        <button class="btn btn-info btn-fixed-xl" type="button">Seperate</button>
+                    </span>
+                </div>
+
+                <h4 class="card-title margin-top-xs">Formation</h4>
+                <div class="input-group margin-top-xs">
+                    <span class="input-group-addon form-control">Pinky</span>
+                    <span class="input-group-btn">
+                        <button class="btn btn-info btn-fixed-md" type="button">Fwd</button>
+                        <button class="btn btn-warning btn-fixed-md" type="button">Mid</button>
+                        <button class="btn btn-success btn-fixed-md" type="button">Aft</button>
+                    </span>
+                </div>
+                <div class="input-group margin-top-xs">
+                    <span class="input-group-addon form-control">Position</span>
+                    <span class="input-group-btn">
+                        <button class="btn btn-info btn-fixed-lg" type="button">Flash</button>
+                        <button class="btn btn-warning btn-fixed-lg" type="button">Steady</button>
+                    </span>
+                </div>
+
+                <div class="input-group margin-top-xs">
+                    <span class="input-group-addon form-control">Collision</span>
+                    <span class="input-group-btn">
+                        <button class="btn btn-info btn-fixed-lg" type="button">ON</button>
+                        <button class="btn btn-warning btn-fixed-lg" type="button">OFF</button>
+                    </span>
+                </div>
+
+                <div class="input-group margin-top-xs">
+                    <span class="input-group-addon form-control">Nose</span>
+                    <span class="input-group-btn">
+                        <button class="btn btn-info btn-fixed-lg" type="button">ON</button>
+                        <button class="btn btn-warning btn-fixed-lg" type="button">OFF</button>
+                    </span>
+                </div>
+
+                <h4 class="card-title margin-top-xs">Lights</h4>
+
+                <div class="input-group margin-top-xs">
+                    <span class="input-group-addon form-control">All Lights</span>
+                    <span class="input-group-btn">
+                        <button class="btn btn-info btn-fixed-lg" type="button">ON</button>
+                        <button class="btn btn-warning btn-fixed-lg" type="button">OFF</button>
+                    </span>
+                </div>
+
+                <div class="input-group margin-top-xs">
+                    <span class="input-group-addon form-control">Signal</span>
+                    <span class="input-group-btn">
+                        <button class="btn btn-info btn-fixed-lg" type="button">ON</button>
+                        <button class="btn btn-warning btn-fixed-lg" type="button">OFF</button>
+                    </span>
+                </div>
+
+                <div class="input-group margin-top-xs">
+                    <span class="input-group-addon form-control">Accel/Comp</span>
+                    <span class="input-group-btn">
+                        <button class="btn btn-info btn-fixed-lg" type="button">ON</button>
+                        <button class="btn btn-warning btn-fixed-lg" type="button">OFF</button>
+                    </span>
+                </div>
             </div>
         </div>
-        <div class="col-xl-4">
-            x
-        </div>
-    </div>
-    <div class="row margin-top-md">
-        <div class="col-xl-4">
-            <input type="text" value="0" class="dial"/>
-        </div>
-        <div class="col-xl-4">
-            <input class="dial" data-display-margin-top="20px" data-width="180" data-height="180" data-angleOffset="50" data-angleArc="260" value="0"/>
-        </div>
-        <div class="col-xl-4">
-            <input type="text" value="0" class="dial"/>
+        <div class="col-sm-7">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card card-block">
+                        <div class="input-group margin-top-xs">
+                            <span class="input-group-addon form-control">NVG</span>
+                    <span class="input-group-btn">
+                        <button class="btn btn-success btn-fixed-md" type="button">ON</button>
+                        <button class="btn btn-info btn-fixed-md" type="button">OFF</button>
+                    </span>
+                        </div>
+                        <center>
+                            <input class="dial" data-fgcolor="#5cb85c" data-display-margin-top="20px" data-width="165"
+                                   data-height="165"
+                                   data-angleOffset="50"
+                                   data-angleArc="260" value="0"/>
+                        </center>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="card card-block">
+                        <center>
+                            <h4 class="card-title">Seat Height</h4>
+                            <input class="dial" data-display-margin-top="20px" data-width="160"
+                                   data-height="170"
+                                   data-angleOffset="50"
+                                   data-angleArc="260" value="0"/>
+                        </center>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="card card-block">
+                        <center>
+                            <h6 class="card-title">Eng Inst</h6>
+                            <input class="dial" data-display-margin-top="20px" data-width="100"
+                                   data-height="100"
+                                   data-angleOffset="50"
+                                   data-angleArc="260" value="0"/>
+                        </center>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card card-block">
+                        <center>
+                            <h6 class="card-title">Flt Inst</h6>
+                            <input class="dial" data-display-margin-top="20px" data-width="100"
+                                   data-height="100"
+                                   data-angleOffset="50"
+                                   data-angleArc="260" value="0"/>
+                        </center>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="card card-block">
+                        <center>
+                            <h6 class="card-title">Aux Inst</h6>
+                            <input class="dial" data-display-margin-top="20px" data-width="100"
+                                   data-height="100"
+                                   data-angleOffset="50"
+                                   data-angleArc="260" value="0"/>
+                        </center>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="card card-block">
+                        <center>
+                            <h6 class="card-title">Flood</h6>
+                            <input class="dial" data-display-margin-top="20px" data-width="100"
+                                   data-height="100"
+                                   data-angleOffset="50"
+                                   data-angleArc="260" value="0"/>
+                        </center>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card card-block">
+                        <center>
+                            <h6 class="card-title">Console</h6>
+                            <input class="dial" data-display-margin-top="20px" data-width="100"
+                                   data-height="100"
+                                   data-angleOffset="50"
+                                   data-angleArc="260" value="0"/>
+                        </center>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
-
-<br/><br/>
 
 
 <script src="/scripts/lib/jquery-2.2.4.js"></script>
@@ -55,23 +206,10 @@
 </html>
 <!--
 
-Landing gear
-
-Emergency jettison
-Jammer On/OFF
-Night vision
-Night vision increase/decrease brightness
-
 UHF/VHF controls
 
 Trim reset !!! (in red)
 Arm ground safety override switch
-
-RWR Separate button
-
-Seat up/down
-
-Fire extinguishers
 
 MFD brightness increase/decrease
 
@@ -81,10 +219,6 @@ UFC (up front controller)
 CDU
 TACAN knob
 ILS knobs
-
-Position Flash switch
-Formation light knob
-Anti-Collision switch
 
 Engine Instrument knob
 etc..

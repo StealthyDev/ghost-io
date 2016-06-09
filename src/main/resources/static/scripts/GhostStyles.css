@@ -1,3 +1,30 @@
+.input-group-addon.form-control {
+    padding: 10px;
+}
+
+.btn-fixed-xs {
+    padding: 6px 2px;
+    width: 20px;
+}
+
+.btn-fixed-sm {
+    padding: 6px 4px;
+    width: 40px;
+}
+
+.btn-fixed-md {
+    padding: 6px 8px;
+    width: 50px;
+}
+
+.btn-fixed-lg {
+    width: 75px;
+}
+
+.btn-fixed-xl {
+    width: 150px;
+}
+
 .margin-top-xs {
     margin-top: 0.5em;
 }
