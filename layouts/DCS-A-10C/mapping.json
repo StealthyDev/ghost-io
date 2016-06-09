@@ -1,10 +1,27 @@
 [
   {
-    "name": "INPUT_0001",
-    "key": "a"
+    "name": "EMERGENCY_JETTISON",
+    "key": "left ctrl+w"
   },
   {
-    "name": "INPUT_0002",
-    "key": "b"
+    "name": "GEAR_UP",
+    "key": "left shift+g"
+  },
+  {
+    "name": "GEAR_DOWN",
+    "key": "left ctrl+g"
+  },
+  {
+    "name": "NVG_ON",
+    "key": "right shift+h"
+  },
+  {
+    "name": "NVG_OFF",
+    "key": "right shift+h"
+  },
+  {
+    "name": "NVG_BRIGHTNESS",
+    "inc": "right ctrl+right shift+h",
+    "dec": "right alt+right shift+h"
   }
 ]

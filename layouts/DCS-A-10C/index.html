@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>DCS A-10C Console</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -14,13 +15,13 @@
         <div class="col-sm-5">
             <div class="card card-block">
                 <h4 class="card-title">General</h4>
-                <button class="btn btn-danger form-control" type="button">Emergency Jettison</button>
+                <button class="btn btn-danger form-control" type="button" data-cmd="EMERGENCY_JETTISON">Emergency Jettison</button>
 
                 <div class="input-group margin-top-xs">
                     <span class="input-group-addon form-control">Gear</span>
                     <span class="input-group-btn">
-                        <button class="btn btn-info btn-fixed-lg" type="button">Up</button>
-                        <button class="btn btn-warning btn-fixed-lg" type="button">Down</button>
+                        <button class="btn btn-info btn-fixed-lg" type="button" data-cmd="GEAR_UP">Up</button>
+                        <button class="btn btn-warning btn-fixed-lg" type="button" data-cmd="GEAR_DOWN">Down</button>
                     </span>
                 </div>
 
@@ -105,15 +106,15 @@
                         <div class="input-group margin-top-xs">
                             <span class="input-group-addon form-control">NVG</span>
                     <span class="input-group-btn">
-                        <button class="btn btn-success btn-fixed-md" type="button">ON</button>
-                        <button class="btn btn-info btn-fixed-md" type="button">OFF</button>
+                        <button class="btn btn-success btn-fixed-md" type="button" data-cmd="NVG_ON">ON</button>
+                        <button class="btn btn-info btn-fixed-md" type="button" data-cmd="NVG_OFF">OFF</button>
                     </span>
                         </div>
                         <center>
                             <input class="dial" data-fgcolor="#5cb85c" data-display-margin-top="20px" data-width="165"
                                    data-height="165"
                                    data-angleOffset="50"
-                                   data-angleArc="260" value="0"/>
+                                   data-angleArc="260" value="0" data-cmd="NVG_BRIGHTNESS" data-cmd-inc="5"/>
                         </center>
                     </div>
                 </div>

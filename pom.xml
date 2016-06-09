@@ -48,6 +48,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
                     <finalName>${project.name}</finalName>
+                    <addResources>true</addResources>
                 </configuration>
             </plugin>
         </plugins>
