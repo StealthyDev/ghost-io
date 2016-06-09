@@ -20,8 +20,11 @@
     "key": "right shift+h"
   },
   {
-    "name": "NVG_BRIGHTNESS",
-    "inc": "right ctrl+right shift+h",
-    "dec": "right alt+right shift+h"
+    "name": "NVG_BRIGHTNESS_UP",
+    "key": "right ctrl+right shift+h"
+  },
+  {
+    "name": "NVG_BRIGHTNESS_DOWN",
+    "key": "right alt+right shift+h"
   }
 ]

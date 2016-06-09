@@ -12,7 +12,7 @@
 <body>
 <div class="container">
     <div class="row margin-top-sm">
-        <div class="col-sm-5">
+        <div class="col-sm-4">
             <div class="card card-block">
                 <h4 class="card-title">General</h4>
                 <button class="btn btn-danger form-control" type="button" data-cmd="EMERGENCY_JETTISON">Emergency Jettison</button>
@@ -39,6 +39,20 @@
                     </span>
                 </div>
 
+                <div class="input-group margin-top-xs">
+                    <span class="input-group-addon form-control">NVG</span>
+                    <span class="input-group-btn">
+                        <button class="btn btn-primary btn-fixed-md" type="button" data-cmd="NVG_ON">ON</button>
+                        <button class="btn btn-info btn-fixed-md" type="button" data-cmd="NVG_OFF">OFF</button>
+                        <button class="btn btn-success btn-fixed-sm" type="button" data-cmd="NVG_OFF">+</button>
+                        <button class="btn btn-warning btn-fixed-sm" type="button" data-cmd="NVG_OFF">-</button>
+                    </span>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card card-block">
                 <h4 class="card-title margin-top-xs">Formation</h4>
                 <div class="input-group margin-top-xs">
                     <span class="input-group-addon form-control">Pinky</span>
@@ -71,7 +85,11 @@
                         <button class="btn btn-warning btn-fixed-lg" type="button">OFF</button>
                     </span>
                 </div>
+            </div>
+        </div>
 
+        <div class="col-sm-4">
+            <div class="card card-block">
                 <h4 class="card-title margin-top-xs">Lights</h4>
 
                 <div class="input-group margin-top-xs">
@@ -99,105 +117,11 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-7">
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="card card-block">
-                        <div class="input-group margin-top-xs">
-                            <span class="input-group-addon form-control">NVG</span>
-                    <span class="input-group-btn">
-                        <button class="btn btn-success btn-fixed-md" type="button" data-cmd="NVG_ON">ON</button>
-                        <button class="btn btn-info btn-fixed-md" type="button" data-cmd="NVG_OFF">OFF</button>
-                    </span>
-                        </div>
-                        <center>
-                            <input class="dial" data-fgcolor="#5cb85c" data-display-margin-top="20px" data-width="165"
-                                   data-height="165"
-                                   data-angleOffset="50"
-                                   data-angleArc="260" value="0" data-cmd="NVG_BRIGHTNESS" data-cmd-inc="5"/>
-                        </center>
-                    </div>
-                </div>
-
-                <div class="col-sm-6">
-                    <div class="card card-block">
-                        <center>
-                            <h4 class="card-title">Seat Height</h4>
-                            <input class="dial" data-display-margin-top="20px" data-width="160"
-                                   data-height="170"
-                                   data-angleOffset="50"
-                                   data-angleArc="260" value="0"/>
-                        </center>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-sm-4">
-                    <div class="card card-block">
-                        <center>
-                            <h6 class="card-title">Eng Inst</h6>
-                            <input class="dial" data-display-margin-top="20px" data-width="100"
-                                   data-height="100"
-                                   data-angleOffset="50"
-                                   data-angleArc="260" value="0"/>
-                        </center>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="card card-block">
-                        <center>
-                            <h6 class="card-title">Flt Inst</h6>
-                            <input class="dial" data-display-margin-top="20px" data-width="100"
-                                   data-height="100"
-                                   data-angleOffset="50"
-                                   data-angleArc="260" value="0"/>
-                        </center>
-                    </div>
-                </div>
-
-                <div class="col-sm-4">
-                    <div class="card card-block">
-                        <center>
-                            <h6 class="card-title">Aux Inst</h6>
-                            <input class="dial" data-display-margin-top="20px" data-width="100"
-                                   data-height="100"
-                                   data-angleOffset="50"
-                                   data-angleArc="260" value="0"/>
-                        </center>
-                    </div>
-                </div>
-
-                <div class="col-sm-4">
-                    <div class="card card-block">
-                        <center>
-                            <h6 class="card-title">Flood</h6>
-                            <input class="dial" data-display-margin-top="20px" data-width="100"
-                                   data-height="100"
-                                   data-angleOffset="50"
-                                   data-angleArc="260" value="0"/>
-                        </center>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="card card-block">
-                        <center>
-                            <h6 class="card-title">Console</h6>
-                            <input class="dial" data-display-margin-top="20px" data-width="100"
-                                   data-height="100"
-                                   data-angleOffset="50"
-                                   data-angleArc="260" value="0"/>
-                        </center>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 </div>
 
 
 <script src="/scripts/lib/jquery-2.2.4.js"></script>
-<script src="/scripts/lib/jquery.kontrol.js"></script>
 <script src="/scripts/lib/tether/js/tether.js"></script>
 <script src="/scripts/lib/bootstrap4/js/bootstrap.js"></script>
 

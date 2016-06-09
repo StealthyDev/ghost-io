@@ -3,6 +3,8 @@
 Project aimed at exposing a web interface for triggering input events
 
 # TODO
+  * Spring security for basic login validation
+  * Identify the type of controls needed - is rotary needed?
   * Ghost-IO favicon
   * List layouts
   * Ability to add layout
