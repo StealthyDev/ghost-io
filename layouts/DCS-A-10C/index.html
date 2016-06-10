@@ -12,10 +12,12 @@
 <body>
 <div class="container">
     <div class="row margin-top-sm">
-        <div class="col-sm-4">
+        <div class="col-sm-6">
             <div class="card card-block">
                 <h4 class="card-title">General</h4>
-                <button class="btn btn-danger form-control" type="button" data-cmd="EMERGENCY_JETTISON">Emergency Jettison</button>
+                <button class="btn btn-danger form-control" type="button" data-cmd="EMERGENCY_JETTISON">Emergency
+                    Jettison
+                </button>
 
                 <div class="input-group margin-top-xs">
                     <span class="input-group-addon form-control">Gear</span>
@@ -42,78 +44,81 @@
                 <div class="input-group margin-top-xs">
                     <span class="input-group-addon form-control">NVG</span>
                     <span class="input-group-btn">
-                        <button class="btn btn-primary btn-fixed-md" type="button" data-cmd="NVG_ON">ON</button>
-                        <button class="btn btn-info btn-fixed-md" type="button" data-cmd="NVG_OFF">OFF</button>
+                        <button class="btn btn-primary btn-fixed-lg" type="button" data-cmd="NVG_TOGGLE">On/Off</button>
                         <button class="btn btn-success btn-fixed-sm" type="button" data-cmd="NVG_OFF">+</button>
                         <button class="btn btn-warning btn-fixed-sm" type="button" data-cmd="NVG_OFF">-</button>
                     </span>
                 </div>
-
             </div>
         </div>
-        <div class="col-sm-4">
-            <div class="card card-block">
-                <h4 class="card-title margin-top-xs">Formation</h4>
-                <div class="input-group margin-top-xs">
-                    <span class="input-group-addon form-control">Pinky</span>
+        <div class="col-sm-6">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="card card-block">
+                        <h4 class="card-title margin-top-xs">Formation</h4>
+                        <div class="input-group margin-top-xs">
+                            <span class="input-group-addon form-control">Pinky</span>
                     <span class="input-group-btn">
                         <button class="btn btn-info btn-fixed-md" type="button">Fwd</button>
                         <button class="btn btn-warning btn-fixed-md" type="button">Mid</button>
                         <button class="btn btn-success btn-fixed-md" type="button">Aft</button>
                     </span>
-                </div>
-                <div class="input-group margin-top-xs">
-                    <span class="input-group-addon form-control">Position</span>
+                        </div>
+                        <div class="input-group margin-top-xs">
+                            <span class="input-group-addon form-control">Position</span>
                     <span class="input-group-btn">
                         <button class="btn btn-info btn-fixed-lg" type="button">Flash</button>
                         <button class="btn btn-warning btn-fixed-lg" type="button">Steady</button>
                     </span>
-                </div>
+                        </div>
 
-                <div class="input-group margin-top-xs">
-                    <span class="input-group-addon form-control">Collision</span>
+                        <div class="input-group margin-top-xs">
+                            <span class="input-group-addon form-control">Collision</span>
                     <span class="input-group-btn">
                         <button class="btn btn-info btn-fixed-lg" type="button">ON</button>
                         <button class="btn btn-warning btn-fixed-lg" type="button">OFF</button>
                     </span>
-                </div>
+                        </div>
 
-                <div class="input-group margin-top-xs">
-                    <span class="input-group-addon form-control">Nose</span>
+                        <div class="input-group margin-top-xs">
+                            <span class="input-group-addon form-control">Nose</span>
                     <span class="input-group-btn">
                         <button class="btn btn-info btn-fixed-lg" type="button">ON</button>
                         <button class="btn btn-warning btn-fixed-lg" type="button">OFF</button>
                     </span>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="card card-block">
+                        <h4 class="card-title margin-top-xs">Lights</h4>
 
-        <div class="col-sm-4">
-            <div class="card card-block">
-                <h4 class="card-title margin-top-xs">Lights</h4>
-
-                <div class="input-group margin-top-xs">
-                    <span class="input-group-addon form-control">All Lights</span>
+                        <div class="input-group margin-top-xs">
+                            <span class="input-group-addon form-control">All Lights</span>
                     <span class="input-group-btn">
                         <button class="btn btn-info btn-fixed-lg" type="button">ON</button>
                         <button class="btn btn-warning btn-fixed-lg" type="button">OFF</button>
                     </span>
-                </div>
+                        </div>
 
-                <div class="input-group margin-top-xs">
-                    <span class="input-group-addon form-control">Signal</span>
+                        <div class="input-group margin-top-xs">
+                            <span class="input-group-addon form-control">Signal</span>
                     <span class="input-group-btn">
                         <button class="btn btn-info btn-fixed-lg" type="button">ON</button>
                         <button class="btn btn-warning btn-fixed-lg" type="button">OFF</button>
                     </span>
-                </div>
+                        </div>
 
-                <div class="input-group margin-top-xs">
-                    <span class="input-group-addon form-control">Accel/Comp</span>
+                        <div class="input-group margin-top-xs">
+                            <span class="input-group-addon form-control">Accel/Comp</span>
                     <span class="input-group-btn">
                         <button class="btn btn-info btn-fixed-lg" type="button">ON</button>
                         <button class="btn btn-warning btn-fixed-lg" type="button">OFF</button>
                     </span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
