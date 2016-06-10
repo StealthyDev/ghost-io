@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Layout {
     private String name;
-    private List<KeyMap> mappings = new ArrayList<>();
+    private List<KeyMap> mappingList = new ArrayList<>();
 
     public String getName() {
         return name;
@@ -15,11 +15,11 @@ public class Layout {
         this.name = name;
     }
 
-    public List<KeyMap> getMappings() {
-        return mappings;
+    public List<KeyMap> getMappingList() {
+        return mappingList;
     }
 
-    public void setMappings(List<KeyMap> mappings) {
-        this.mappings = mappings;
+    public void setMappingList(List<KeyMap> mappingList) {
+        this.mappingList = mappingList;
     }
 }

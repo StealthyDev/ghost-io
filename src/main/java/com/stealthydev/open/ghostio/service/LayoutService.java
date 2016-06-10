@@ -13,6 +13,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @Component
 public class LayoutService {
@@ -20,6 +21,17 @@ public class LayoutService {
 
     public List<Layout> list() {
         return layouts;
+    }
+
+    public Layout getLayoutByName(String name) {
+        Optional<Layout> layout = list().stream().filter(l -> l.getName().equals(name)).findFirst();
+        return layout.get();
+    }
+
+    public KeyMap getKeyMap(String layoutName, String key) {
+        Layout layout = getLayoutByName(layoutName);
+        Optional<KeyMap> keymap = layout.getMappingList().stream().filter(k -> k.getName().equals(key)).findFirst();
+        return keymap.get();
     }
 
     // TODO: Private code: should refactor
@@ -48,7 +60,7 @@ public class LayoutService {
                     layout.setName(file.getName());
                     File mappingFile = new File(LAYOUTS_FOLDER + File.separator + layout.getName() + File.separator + MAPPING_FILE);
                     List<KeyMap> mappings = mapper.readValue(mappingFile, mappingsRef);
-                    layout.setMappings(mappings);
+                    layout.setMappingList(mappings);
                     layoutList.add(layout);
                 } catch (IOException e) {
                     log.error("Error while reading mappings for: " + file.getName(), e);

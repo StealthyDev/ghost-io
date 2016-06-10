@@ -8,9 +8,13 @@ function initComponents() {
 
 function btnPressed(event) {
     var btn = $(this);
-    triggerCommand("key", btn.attr("data-cmd"));
+    triggerCommand(btn.attr("data-cmd"));
 }
 
-function triggerCommand(type, cmd) {
-    console.log([type, cmd]);
+function triggerCommand(cmd) {
+    console.log([cmd]);
+    $.ajax({
+        url: "/trigger/DCS-A-10C/" + cmd,
+        context: document.body
+    });
 }

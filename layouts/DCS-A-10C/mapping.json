@@ -1,30 +1,26 @@
 [
   {
     "name": "EMERGENCY_JETTISON",
-    "key": "left ctrl+w"
+    "recording": [["VK_CONTROL", "w"]]
   },
   {
     "name": "GEAR_UP",
-    "key": "left shift+g"
+    "recording": [["VK_SHIFT", "g"]]
   },
   {
     "name": "GEAR_DOWN",
-    "key": "left ctrl+g"
+    "recording": [["VK_CONTROL", "g"]]
   },
   {
-    "name": "NVG_ON",
-    "key": "right shift+h"
-  },
-  {
-    "name": "NVG_OFF",
-    "key": "right shift+h"
+    "name": "NVG_TOGGLE",
+    "recording": [["VK_SHIFT", "h"]]
   },
   {
     "name": "NVG_BRIGHTNESS_UP",
-    "key": "right ctrl+right shift+h"
+    "recording": [["VK_CONTROL", "VK_SHIFT", "h"]]
   },
   {
     "name": "NVG_BRIGHTNESS_DOWN",
-    "key": "right alt+right shift+h"
+    "recording": [["VK_ALT", "VK_SHIFT", "h"]]
   }
 ]
