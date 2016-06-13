@@ -14,6 +14,7 @@ public class AutoHotKeyService {
 
     AutoHotKeyService() {
         // http://hotkeyit.github.io/v2/
+        // https://autohotkey.com/docs/commands/Send.htm
         URL autoHotKeyDllUrl = getClass().getClassLoader().getResource("autohotkey/AutoHotKey_64.dll");
         String autoHotKeyDll = new File(autoHotKeyDllUrl.getFile()).getAbsoluteFile().toString();
         this.lib = (AutoHotKeyDll) Native.loadLibrary(autoHotKeyDll, AutoHotKeyDll.class);
@@ -21,6 +22,6 @@ public class AutoHotKeyService {
 
     public void fireEvent(KeyMap keymap) {
         lib.ahktextdll("#Persistent".toCharArray());
-        lib.ahkExec("msgbox,,Hellow!,Hellow World!".toCharArray());
+        lib.ahkExec(("Send " + keymap.getRecording()).toCharArray());
     }
 }

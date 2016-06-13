@@ -1,11 +1,9 @@
 package com.stealthydev.open.ghostio.model;
 
-import java.util.List;
-
 public class KeyMap {
     private String description;
     private String name;
-    private List<List<String>> recording;
+    private String recording;
 
     public String getDescription() {
         return description;
@@ -23,11 +21,11 @@ public class KeyMap {
         this.name = name;
     }
 
-    public List<List<String>> getRecording() {
+    public String getRecording() {
         return recording;
     }
 
-    public void setRecording(List<List<String>> recording) {
+    public void setRecording(String recording) {
         this.recording = recording;
     }
 }

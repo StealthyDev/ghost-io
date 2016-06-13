@@ -1,26 +1,6 @@
 [
   {
     "name": "EMERGENCY_JETTISON",
-    "recording": [["VK_CONTROL", "w"]]
-  },
-  {
-    "name": "GEAR_UP",
-    "recording": [["VK_SHIFT", "g"]]
-  },
-  {
-    "name": "GEAR_DOWN",
-    "recording": [["VK_CONTROL", "g"]]
-  },
-  {
-    "name": "NVG_TOGGLE",
-    "recording": [["VK_SHIFT", "h"]]
-  },
-  {
-    "name": "NVG_BRIGHTNESS_UP",
-    "recording": [["VK_CONTROL", "VK_SHIFT", "h"]]
-  },
-  {
-    "name": "NVG_BRIGHTNESS_DOWN",
-    "recording": [["VK_ALT", "VK_SHIFT", "h"]]
+    "recording": "+abC"
   }
 ]
