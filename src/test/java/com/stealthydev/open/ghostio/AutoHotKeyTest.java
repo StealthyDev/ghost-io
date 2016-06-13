@@ -16,7 +16,7 @@ public class AutoHotKeyTest {
         System.out.println("running in " + System.getProperty("sun.arch.data.model"));
 
         System.out.println("Loading dll");
-        autoHotKeyDll lib = (autoHotKeyDll) Native.loadLibrary("F:\\opt\\apps\\ghost-io\\autohotkey\\AutoHotkey.exe", autoHotKeyDll.class);
+        autoHotKeyDll lib = (autoHotKeyDll) Native.loadLibrary("C:\\sen\\projects\\work\\java\\ghost-io\\autohotkey\\AutoHotkey_64.dll", autoHotKeyDll.class);
 
         System.out.println("initialisation");
         lib.ahktextdll("#Persistent".toCharArray());
