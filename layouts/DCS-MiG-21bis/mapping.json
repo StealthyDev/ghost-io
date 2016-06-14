@@ -1,0 +1,54 @@
+[
+  {
+    "name": "SAU_STABILIZE",
+    "recording": "{LAlt down}a{LAlt up}"
+  },
+  {
+    "name": "SAU_HOLD_ALTITUDE",
+    "recording": "j"
+  },
+  {
+    "name": "SAU_RECOVERY",
+    "recording": "a"
+  },
+  {
+    "name": "SAU_LOW_ALTITUDE_RECOVERY_ONOFF",
+    "recording": "{RCtrl down}s{RCtrl up}"
+  },
+  {
+    "name": "SAU_CANCEL_CURRENT_MODE",
+    "recording": "{LAlt down}{LCtrl down}a{LCtrl up}{LAlt up}"
+  },
+  {
+    "name": "SAU_LANDING_AUTO",
+    "recording": "{RAlt down}a{RAlt up}"
+  },
+  {
+    "name": "SAU_LANDING_COMMAND",
+    "recording": "{RShift down}a{RShift up}"
+  },
+  {
+    "name": "SAU_LANDING_CANCEL",
+    "recording": "{RAlt down}{RShift down}a{RShift up}{RAlt up}"
+  },
+  {
+    "name": "GEARS_HANDLE_LOCK_RELEASED",
+    "recording": "{RShift down}g{RShift up}"
+  },
+  {
+    "name": "GEARS_UP",
+    "recording": "g"
+  },
+  {
+    "name": "GEARS_NEUTRAL",
+    "recording": "{LCtrl down}g{LCtrl up}"
+  },
+  {
+    "name": "GEARS_DOWN",
+    "recording": "{LShift down}g{LShift up}"
+  },
+  {
+    "name": "GEARS_HANDLE_LOCK_ENGAGED",
+    "recording": "{RCtrl down}g{RCtrl up}"
+  }
+]
