@@ -1,6 +1,6 @@
 [
   {
     "name": "EMERGENCY_JETTISON",
-    "recording": "+abC"
+    "recording": "{LCtrl down}w{LCtrl up}"
   }
 ]
