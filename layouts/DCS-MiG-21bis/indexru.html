@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>DCS MiG-21bis Console</title>
+    <title>DCS МиГ-21бис пулть управления</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -14,37 +14,37 @@
     <div class="row margin-top-sm">
         <div class="col-sm-6">
             <div class="card card-block">
-                <h4 class="card-title">Flight</h4>
+                <h4 class="card-title">Полет</h4>
 				<div class="input-group margin-top-xs">
-                    <span class="input-group-addon form-control">SAU</span>
+                    <span class="input-group-addon form-control">САУ</span>
                     <span class="input-group-btn">
-                        <button class="btn btn-success btn-fixed-xl" type="button" data-cmd="SAU_STABILIZE">Stabilize</button>
-                        <button class="btn btn-info btn-fixed-xl" type="button" data-cmd="SAU_HOLD_ALTITUDE">Hold Alt.</button>
+                        <button class="btn btn-success btn-fixed-xl" type="button" data-cmd="SAU_STABILIZE">Стабилизация</button>
+                        <button class="btn btn-info btn-fixed-xl" type="button" data-cmd="SAU_HOLD_ALTITUDE">Горизонт</button>
                     </span>
                 </div>
 				
 				<div class="input-group margin-top-xs">
-                    <span class="input-group-addon form-control">Recovery</span>
+                    <span class="input-group-addon form-control">Приведение</span>
                     <span class="input-group-btn">
-                        <button class="btn btn-warning btn-fixed-xl" type="button" data-cmd="SAU_RECOVERY">Recover</button>
-                        <button class="btn btn-info btn-fixed-xl" type="button" data-cmd="SAU_LOW_ALTITUDE_RECOVERY_ONOFF">Low Alt. on/off</button>
+                        <button class="btn btn-warning btn-fixed-xl" type="button" data-cmd="SAU_RECOVERY">Горизонт</button>
+                        <button class="btn btn-info btn-fixed-xl" type="button" data-cmd="SAU_LOW_ALTITUDE_RECOVERY_ONOFF">Малая высота</button>
                     </span>
                 </div>
 				
 				<button class="btn btn-danger margin-top-xs form-control" type="button" data-cmd="SAU_CANCEL_CURRENT_MODE">
-                    SAU Cancel
+                    Отключение автопилота
                 </button>
 
                 <div class="input-group margin-top-xs">
-                    <span class="input-group-addon form-control">Landing</span>
+                    <span class="input-group-addon form-control">Посадка</span>
                     <span class="input-group-btn">
-                        <button class="btn btn-success btn-fixed-xl" type="button" data-cmd="SAU_LANDING_AUTO">Automatic</button>
-						<button class="btn btn-warning btn-fixed-xl" type="button" data-cmd="SAU_LANDING_COMMAND">Command</button>
+                        <button class="btn btn-success btn-fixed-xl" type="button" data-cmd="SAU_LANDING_AUTO">Автоматическая</button>
+						<button class="btn btn-warning btn-fixed-xl" type="button" data-cmd="SAU_LANDING_COMMAND">Директорная</button>
                     </span>
                 </div>
 				
 				<button class="btn btn-danger margin-top-xs form-control" type="button" data-cmd="SAU_LANDING_CANCEL">
-                    SAU Cancel Landing
+                    Отказать посадку
                 </button>
 
             </div>
@@ -54,20 +54,20 @@
             <div class="row">
                 <div class="col-sm-12">
                     <div class="card card-block">
-                        <h4 class="card-title margin-top-xs">Gear</h4>
+                        <h4 class="card-title margin-top-xs">Шасси</h4>
                         <div class="input-group margin-top-xs">
-                            <span class="input-group-addon form-control">Safety</span>
+                            <span class="input-group-addon form-control">Замок</span>
 							<span class="input-group-btn">
-								<button class="btn btn-warning btn-fixed-xl" type="button" data-cmd="GEARS_HANDLE_LOCK_RELEASED">Unlocked</button>
-								<button class="btn btn-success btn-fixed-xl" type="button" data-cmd="GEARS_HANDLE_LOCK_ENGAGED">Locked</button>
+								<button class="btn btn-warning btn-fixed-xl" type="button" data-cmd="GEARS_HANDLE_LOCK_RELEASED">Открыт</button>
+								<button class="btn btn-success btn-fixed-xl" type="button" data-cmd="GEARS_HANDLE_LOCK_ENGAGED">Закрыт</button>
 							</span>
                         </div>
                         <div class="input-group margin-top-xs">
-                            <span class="input-group-addon form-control">Lever</span>
+                            <span class="input-group-addon form-control">Кран</span>
 							<span class="input-group-btn">
-								<button class="btn btn-warning btn-fixed-lg" type="button" data-cmd="GEARS_UP">Up</button>
-								<button class="btn btn-success btn-fixed-lg" type="button" data-cmd="GEARS_NEUTRAL">Neutral</button>
-								<button class="btn btn-info btn-fixed-lg" type="button" data-cmd="GEARS_DOWN">Down</button>
+								<button class="btn btn-warning btn-fixed-lg" type="button" data-cmd="GEARS_UP">Уворка</button>
+								<button class="btn btn-success btn-fixed-lg" type="button" data-cmd="GEARS_NEUTRAL">Нейтраль</button>
+								<button class="btn btn-info btn-fixed-lg" type="button" data-cmd="GEARS_DOWN">Выпуск</button>
 							</span>
 						</div>
                     </div>
