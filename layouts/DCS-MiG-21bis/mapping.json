@@ -4,7 +4,7 @@
     "recording": "{LAlt down}a{LAlt up}"
   },
   {
-    "name": "SAU_HOLD_ALTITUDE",
+    "name": "SAU_HOLD_ATTITUDE",
     "recording": "j"
   },
   {
