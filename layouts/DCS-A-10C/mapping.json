@@ -2,5 +2,13 @@
   {
     "name": "EMERGENCY_JETTISON",
     "recording": "{LCtrl down}w{LCtrl up}"
+  },
+  {
+    "name": "GEAR_UP",
+    "recording": "{LCtrl down}g{LCtrl up}"
+  },
+  {
+    "name": "GEAR_DOWN",
+    "recording": "{LShift down}g{LShift up}"
   }
 ]
