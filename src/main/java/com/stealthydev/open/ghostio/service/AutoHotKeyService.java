@@ -18,10 +18,10 @@ public class AutoHotKeyService {
         URL autoHotKeyDllUrl = getClass().getClassLoader().getResource("autohotkey/AutoHotKey_64.dll");
         String autoHotKeyDll = new File(autoHotKeyDllUrl.getFile()).getAbsoluteFile().toString();
         this.lib = (AutoHotKeyDll) Native.loadLibrary(autoHotKeyDll, AutoHotKeyDll.class);
+        lib.ahktextdll("#Persistent".toCharArray());
     }
 
     public void fireEvent(KeyMap keymap) {
-        lib.ahktextdll("#Persistent".toCharArray());
         lib.ahkExec(("Send " + keymap.getRecording()).toCharArray());
     }
 }
