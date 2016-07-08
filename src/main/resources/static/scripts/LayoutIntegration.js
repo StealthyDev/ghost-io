@@ -1,3 +1,5 @@
+var activeLayout = "DCS-A-10C";
+
 $(function () {
     initComponents();
 });
@@ -14,7 +16,7 @@ function btnPressed(event) {
 function triggerCommand(cmd) {
     console.log([cmd]);
     $.ajax({
-        url: "/trigger/DCS-A-10C/" + cmd,
+        url: "/trigger/" + activeLayout + "/" + cmd,
         context: document.body
     });
 }
