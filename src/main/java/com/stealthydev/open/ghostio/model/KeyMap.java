@@ -28,4 +28,8 @@ public class KeyMap {
     public void setRecording(String recording) {
         this.recording = recording;
     }
+
+    public String toString() {
+        return "[Name] " + name + " [Recording] " + recording + " [Description] " + description;
+    }
 }

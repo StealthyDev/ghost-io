@@ -29,6 +29,6 @@ public class TriggerRequest {
     }
 
     public String toString() {
-        return "[Layout] " + layout + " [input] " + input;
+        return "[Layout] " + layout + " [Input] " + input;
     }
 }

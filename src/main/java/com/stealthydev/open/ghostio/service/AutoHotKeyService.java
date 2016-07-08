@@ -3,6 +3,7 @@ package com.stealthydev.open.ghostio.service;
 import com.stealthydev.open.ghostio.model.KeyMap;
 import com.stealthydev.open.ghostio.util.AutoHotKeyDll;
 import com.sun.jna.Native;
+import org.apache.log4j.Logger;
 import org.springframework.stereotype.Component;
 
 import java.io.File;
@@ -10,6 +11,7 @@ import java.net.URL;
 
 @Component
 public class AutoHotKeyService {
+    Logger log = Logger.getLogger(AutoHotKeyService.class);
     AutoHotKeyDll lib;
 
     AutoHotKeyService() {
@@ -22,6 +24,7 @@ public class AutoHotKeyService {
     }
 
     public void fireEvent(KeyMap keymap) {
+        log.info("FireEvent: " + keymap.toString());
         lib.ahkExec(("Send " + keymap.getRecording()).toCharArray());
     }
 }
