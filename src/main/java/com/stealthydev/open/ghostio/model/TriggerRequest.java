@@ -27,4 +27,8 @@ public class TriggerRequest {
     public void setInput(String input) {
         this.input = input;
     }
+
+    public String toString() {
+        return "[Layout] " + layout + " [input] " + input;
+    }
 }
