@@ -97,7 +97,7 @@
   },
   {
     "name":"FILTER_WEATHER",
-    "recording":"R"
+    "recording":"r"
   },
   {
     "name":"FILTER_IFF",
@@ -113,6 +113,6 @@
   },
   {
     "name":"FILTER_CANCEL",
-    "recording":"{LCtrl down}{LShift down}d{LShift up}{LCtrl up}"
+    "recording":"{LCtrl down}{LShift down}f{LShift up}{LCtrl up}"
   }
 ]
