@@ -1,54 +1,118 @@
 [
   {
-    "name": "SAU_STABILIZE",
-    "recording": "{LAlt down}a{LAlt up}"
+    "name":"SAU_STABILIZE",
+    "recording":"{LAlt down}a{LAlt up}"
   },
   {
-    "name": "SAU_HOLD_ATTITUDE",
-    "recording": "j"
+    "name":"SAU_HOLD_ATTITUDE",
+    "recording":"j"
   },
   {
-    "name": "SAU_RECOVERY",
-    "recording": "a"
+    "name":"SAU_RECOVERY",
+    "recording":"a"
   },
   {
-    "name": "SAU_LOW_ALTITUDE_RECOVERY_ONOFF",
-    "recording": "{RCtrl down}s{RCtrl up}"
+    "name":"SAU_LOW_ALTITUDE_RECOVERY_ONOFF",
+    "recording":"{RCtrl down}s{RCtrl up}"
   },
   {
-    "name": "SAU_CANCEL_CURRENT_MODE",
-    "recording": "{LAlt down}{LCtrl down}a{LCtrl up}{LAlt up}"
+    "name":"SAU_CANCEL_CURRENT_MODE",
+    "recording":"{LAlt down}{LCtrl down}a{LCtrl up}{LAlt up}"
   },
   {
-    "name": "SAU_LANDING_AUTO",
-    "recording": "{RAlt down}a{RAlt up}"
+    "name":"SAU_LANDING_AUTO",
+    "recording":"{RAlt down}a{RAlt up}"
   },
   {
-    "name": "SAU_LANDING_COMMAND",
-    "recording": "{RShift down}a{RShift up}"
+    "name":"SAU_LANDING_COMMAND",
+    "recording":"{RShift down}a{RShift up}"
   },
   {
-    "name": "SAU_LANDING_CANCEL",
-    "recording": "{RAlt down}{RShift down}a{RShift up}{RAlt up}"
+    "name":"SAU_LANDING_CANCEL",
+    "recording":"{RAlt down}{RShift down}a{RShift up}{RAlt up}"
   },
   {
-    "name": "GEARS_HANDLE_LOCK_RELEASED",
-    "recording": "{RShift down}g{RShift up}"
+    "name":"GEARS_HANDLE_LOCK_RELEASED",
+    "recording":"{RShift down}g{RShift up}"
   },
   {
-    "name": "GEARS_UP",
-    "recording": "g"
+    "name":"GEARS_UP",
+    "recording":"g"
   },
   {
-    "name": "GEARS_NEUTRAL",
-    "recording": "{LCtrl down}g{LCtrl up}"
+    "name":"GEARS_NEUTRAL",
+    "recording":"{LCtrl down}g{LCtrl up}"
   },
   {
-    "name": "GEARS_DOWN",
-    "recording": "{LShift down}g{LShift up}"
+    "name":"GEARS_DOWN",
+    "recording":"{LShift down}g{LShift up}"
   },
   {
-    "name": "GEARS_HANDLE_LOCK_ENGAGED",
-    "recording": "{RCtrl down}g{RCtrl up}"
+    "name":"GEARS_HANDLE_LOCK_ENGAGED",
+    "recording":"{RCtrl down}g{RCtrl up}"
+  },
+  {
+    "name":"RADAR_OFF",
+    "recording":"{LCtrl down}{LShift down}4{LShift up}{LCtrl up}"
+  },
+  {
+    "name":"RADAR_STANDBY",
+    "recording":"{LAlt down}4{LAlt up}"
+  },
+  {
+    "name":"RADAR_ON",
+    "recording":"{LAlt down}{LShift down}4{LShift up}{LAlt up}"
+  },
+  {
+    "name":"RADAR_ALT_OFF",
+    "recording":"{LCtrl down}{LShift down}5{LShift up}{LCtrl up}"
+  },
+  {
+    "name":"RADAR_ALT_ON",
+    "recording":"{LAlt down}5{LAlt up}"
+  },
+  {
+    "name":"RADAR_ALT_TILT",
+    "recording":"{LAlt down}{LShift down}5{LShift up}{LAlt up}"
+  },
+  {
+    "name":"RADAR_BEAM_OFF",
+    "recording":"{LCtrl down}{LShift down}6{LShift up}{LCtrl up}"
+  },
+  {
+    "name":"RADAR_BEAM_ON",
+    "recording":"{LAlt down}6{LAlt up}"
+  },
+  {
+    "name":"FILTER_ACTIVE",
+    "recording":"{LShift down}q{LShift up}"
+  },
+  {
+    "name":"FILTER_MIXED",
+    "recording":"{LShift down}w{LShift up}"
+  },
+  {
+    "name":"FILTER_PASSIVE",
+    "recording":"{LShift down}e{LShift up}"
+  },
+  {
+    "name":"FILTER_WEATHER",
+    "recording":"R"
+  },
+  {
+    "name":"FILTER_IFF",
+    "recording":"{LShift down}a{LShift up}"
+  },
+  {
+    "name":"FILTER_LOWSPEED",
+    "recording":"{LShift down}s{LShift up}"
+  },
+  {
+    "name":"FILTER_SELFTEST",
+    "recording":"{LShift down}d{LShift up}"
+  },
+  {
+    "name":"FILTER_CANCEL",
+    "recording":"{LCtrl down}{LShift down}d{LShift up}{LCtrl up}"
   }
 ]
