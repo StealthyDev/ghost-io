@@ -22,6 +22,7 @@ body {
 }
 
 .btn-fixed-lg {
+	padding: 6px 10px;
     width: 75px;
 }
 

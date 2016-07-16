@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>DCS MiG-21bis Console</title>
+    <title>DCS MiG-21 control panel</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -18,56 +18,108 @@
 				<div class="input-group margin-top-xs">
                     <span class="input-group-addon form-control">SAU</span>
                     <span class="input-group-btn">
-                        <button class="btn btn-success btn-fixed-xl" type="button" data-cmd="SAU_STABILIZE">Stabilize</button>
-                        <button class="btn btn-info btn-fixed-xl" type="button" data-cmd="SAU_HOLD_ATTITUDE">Hold attitude</button>
+                        <button class="btn btn-success btn-fixed-lg" type="button" data-cmd="SAU_STABILIZE">Stab</button>
+                        <button class="btn btn-info btn-fixed-lg" type="button" data-cmd="SAU_HOLD_ATTITUDE">Att</button>
                     </span>
                 </div>
 				
 				<div class="input-group margin-top-xs">
-                    <span class="input-group-addon form-control">Recovery</span>
+                    <span class="input-group-addon form-control">Level flight</span>
                     <span class="input-group-btn">
-                        <button class="btn btn-warning btn-fixed-xl" type="button" data-cmd="SAU_RECOVERY">Hold altitude</button>
-                        <button class="btn btn-info btn-fixed-xl" type="button" data-cmd="SAU_LOW_ALTITUDE_RECOVERY_ONOFF">Low Alt. on/off</button>
+                        <button class="btn btn-warning btn-fixed-lg" type="button" data-cmd="SAU_RECOVERY">On</button>
+                        <button class="btn btn-info btn-fixed-lg" type="button" data-cmd="SAU_LOW_ALTITUDE_RECOVERY_ONOFF">L.Alt</button>
                     </span>
                 </div>
 				
 				<button class="btn btn-danger margin-top-xs form-control" type="button" data-cmd="SAU_CANCEL_CURRENT_MODE">
-                    SAU Cancel
+                    Cancel autopilot
                 </button>
 
                 <div class="input-group margin-top-xs">
                     <span class="input-group-addon form-control">Landing</span>
                     <span class="input-group-btn">
-                        <button class="btn btn-success btn-fixed-xl" type="button" data-cmd="SAU_LANDING_AUTO">Automatic</button>
-						<button class="btn btn-warning btn-fixed-xl" type="button" data-cmd="SAU_LANDING_COMMAND">Command</button>
+                        <button class="btn btn-success btn-fixed-lg" type="button" data-cmd="SAU_LANDING_AUTO">Auto</button>
+						<button class="btn btn-warning btn-fixed-lg" type="button" data-cmd="SAU_LANDING_COMMAND">Dirc</button>
                     </span>
                 </div>
 				
 				<button class="btn btn-danger margin-top-xs form-control" type="button" data-cmd="SAU_LANDING_CANCEL">
-                    SAU Cancel Landing
+                    Cancel landing
                 </button>
 
             </div>
+			
+			<div class="card card-block">
+				<h4 class="card-title">Gear</h4>
+				<div class="input-group margin-top-xs">
+					<span class="input-group-addon form-control">Latch&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+					<span class="input-group-btn">
+						<button class="btn btn-warning btn-fixed-lg" type="button" data-cmd="GEARS_HANDLE_LOCK_RELEASED">Pull</button>
+						<button class="btn btn-success btn-fixed-lg" type="button" data-cmd="GEARS_HANDLE_LOCK_ENGAGED">Push</button>
+					</span>
+				</div>
+				<div class="input-group margin-top-xs">
+					<span class="input-group-addon form-control">Lever</span>
+					<span class="input-group-btn">
+						<button class="btn btn-warning btn-fixed-lg" type="button" data-cmd="GEARS_UP">Up</button>
+						<button class="btn btn-success btn-fixed-lg" type="button" data-cmd="GEARS_NEUTRAL">N</button>
+						<button class="btn btn-info btn-fixed-lg" type="button" data-cmd="GEARS_DOWN">Down</button>
+					</span>
+				</div>
+			</div>
+		
         </div>
 		
         <div class="col-sm-6">
             <div class="row">
                 <div class="col-sm-12">
                     <div class="card card-block">
-                        <h4 class="card-title margin-top-xs">Gear</h4>
+                        <h4 class="card-title">Radar Sapfir-21M</h4>
                         <div class="input-group margin-top-xs">
-                            <span class="input-group-addon form-control">Safety</span>
+                            <span class="input-group-addon form-control">Radar state&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
 							<span class="input-group-btn">
-								<button class="btn btn-warning btn-fixed-xl" type="button" data-cmd="GEARS_HANDLE_LOCK_RELEASED">Unlocked</button>
-								<button class="btn btn-success btn-fixed-xl" type="button" data-cmd="GEARS_HANDLE_LOCK_ENGAGED">Locked</button>
+								<button class="btn btn-info btn-fixed-lg" type="button" data-cmd="RADAR_OFF">Off</button>
+								<button class="btn btn-warning btn-fixed-lg" type="button" data-cmd="RADAR_STANDBY">Warm</button>
+								<button class="btn btn-danger btn-fixed-lg" type="button" data-cmd="RADAR_ON">On</button>
 							</span>
                         </div>
                         <div class="input-group margin-top-xs">
-                            <span class="input-group-addon form-control">Lever</span>
+                            <span class="input-group-addon form-control">Alt. compensation</span>
 							<span class="input-group-btn">
-								<button class="btn btn-warning btn-fixed-lg" type="button" data-cmd="GEARS_UP">Up</button>
-								<button class="btn btn-success btn-fixed-lg" type="button" data-cmd="GEARS_NEUTRAL">Neutral</button>
-								<button class="btn btn-info btn-fixed-lg" type="button" data-cmd="GEARS_DOWN">Down</button>
+								<button class="btn btn-info btn-fixed-lg" type="button" data-cmd="RADAR_ALT_OFF">Off</button>
+								<button class="btn btn-warning btn-fixed-lg" type="button" data-cmd="RADAR_ALT_ON">On</button>
+								<button class="btn btn-danger btn-fixed-lg" type="button" data-cmd="RADAR_ALT_TILT">Angle</button>
+							</span>
+						</div>
+						<div class="input-group margin-top-xs">
+                            <span class="input-group-addon form-control">Fixed beam mode&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+							<span class="input-group-btn">
+								<button class="btn btn-info btn-fixed-lg" type="button" data-cmd="RADAR_BEAM_OFF">Off</button>
+								<button class="btn btn-warning btn-fixed-lg" type="button" data-cmd="RADAR_BEAM_ON">On</button>
+							</span>
+						</div>
+                    </div>
+                </div>
+				
+				<div class="col-sm-12">
+                    <div class="card card-block">
+                        <h4 class="card-title">Filter</h4>
+                        <div class="input-group margin-top-xs">
+                            <span class="input-group-addon form-control">Jamming</span>
+							<span class="input-group-btn">
+								<button class="btn btn-danger btn-fixed-lg" type="button" data-cmd="FILTER_ACTIVE">Actv</button>
+								<button class="btn btn-warning btn-fixed-lg" type="button" data-cmd="FILTER_MIXED">Mix</button>
+								<button class="btn btn-info btn-fixed-lg" type="button" data-cmd="FILTER_PASSIVE">Pasv</button>
+								<button class="btn btn-success btn-fixed-lg" type="button" data-cmd="FILTER_WEATHER">Meteo</button>
+							</span>
+                        </div>
+                        <div class="input-group margin-top-xs">
+                            <span class="input-group-addon form-control">Special</span>
+							<span class="input-group-btn">
+								<button class="btn btn-warning btn-fixed-lg" type="button" data-cmd="FILTER_IFF">IFF</button>
+								<button class="btn btn-success btn-fixed-lg" type="button" data-cmd="FILTER_LOWSPEED">L.Spd</button>
+								<button class="btn btn-info btn-fixed-lg" type="button" data-cmd="FILTER_SELFTEST">Test</button>
+								<button class="btn btn-danger btn-fixed-lg" type="button" data-cmd="FILTER_CANCEL">Cancl</button>
 							</span>
 						</div>
                     </div>
