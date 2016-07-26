@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DCS МиГ-21бис пулть управления</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="/scripts/lib/bootstrap4/css/bootstrap.css">
+    <link rel="stylesheet" href="/scripts/GhostStyles.css">
+</head>
+<body>
+<div class="container">
+    <div class="row margin-top-sm">
+        <div class="col-sm-6">
+            <div class="card card-block">
+                <h4 class="card-title">Полет</h4>
+				<div class="input-group margin-top-xs">
+                    <span class="input-group-addon form-control">САУ</span>
+                    <span class="input-group-btn">
+                        <button class="btn btn-success btn-fixed-lg" type="button" data-cmd="SAU_STABILIZE">Стаб.</button>
+                        <button class="btn btn-info btn-fixed-lg" type="button" data-cmd="SAU_HOLD_ATTITUDE">Угол</button>
+                    </span>
+                </div>
+				
+				<div class="input-group margin-top-xs">
+                    <span class="input-group-addon form-control">Приведение</span>
+                    <span class="input-group-btn">
+                        <button class="btn btn-warning btn-fixed-lg" type="button" data-cmd="SAU_RECOVERY">Гориз.</button>
+                        <button class="btn btn-info btn-fixed-lg" type="button" data-cmd="SAU_LOW_ALTITUDE_RECOVERY_ONOFF">М.Выс.</button>
+                    </span>
+                </div>
+				
+				<button class="btn btn-danger margin-top-xs form-control" type="button" data-cmd="SAU_CANCEL_CURRENT_MODE">
+                    Отключение автопилота
+                </button>
+
+                <div class="input-group margin-top-xs">
+                    <span class="input-group-addon form-control">Посадка</span>
+                    <span class="input-group-btn">
+                        <button class="btn btn-success btn-fixed-lg" type="button" data-cmd="SAU_LANDING_AUTO">Автом.</button>
+						<button class="btn btn-warning btn-fixed-lg" type="button" data-cmd="SAU_LANDING_COMMAND">Дирек.</button>
+                    </span>
+                </div>
+				
+				<button class="btn btn-danger margin-top-xs form-control" type="button" data-cmd="SAU_LANDING_CANCEL">
+                    Отказать посадку
+                </button>
+
+            </div>
+			
+			<div class="card card-block">
+				<h4 class="card-title">Шасси</h4>
+				<div class="input-group margin-top-xs">
+					<span class="input-group-addon form-control">Замок&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+					<span class="input-group-btn">
+						<button class="btn btn-warning btn-fixed-lg" type="button" data-cmd="GEARS_HANDLE_LOCK_RELEASED">Откр.</button>
+						<button class="btn btn-success btn-fixed-lg" type="button" data-cmd="GEARS_HANDLE_LOCK_ENGAGED">Закр.</button>
+					</span>
+				</div>
+				<div class="input-group margin-top-xs">
+					<span class="input-group-addon form-control">Кран</span>
+					<span class="input-group-btn">
+						<button class="btn btn-warning btn-fixed-lg" type="button" data-cmd="GEARS_UP">Убор.</button>
+						<button class="btn btn-success btn-fixed-lg" type="button" data-cmd="GEARS_NEUTRAL">Нейт.</button>
+						<button class="btn btn-info btn-fixed-lg" type="button" data-cmd="GEARS_DOWN">Вып.</button>
+					</span>
+				</div>
+			</div>
+		
+        </div>
+		
+        <div class="col-sm-6">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="card card-block">
+                        <h4 class="card-title">РЛС Сапфир-21М</h4>
+                        <div class="input-group margin-top-xs">
+                            <span class="input-group-addon form-control">Режим РЛС&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+							<span class="input-group-btn">
+								<button class="btn btn-info btn-fixed-lg" type="button" data-cmd="RADAR_OFF">Выкл.</button>
+								<button class="btn btn-warning btn-fixed-lg" type="button" data-cmd="RADAR_STANDBY">Пред.</button>
+								<button class="btn btn-danger btn-fixed-lg" type="button" data-cmd="RADAR_ON">Вкл.</button>
+							</span>
+                        </div>
+                        <div class="input-group margin-top-xs">
+                            <span class="input-group-addon form-control">Компенсация высоты</span>
+							<span class="input-group-btn">
+								<button class="btn btn-info btn-fixed-lg" type="button" data-cmd="RADAR_ALT_OFF">Выкл.</button>
+								<button class="btn btn-warning btn-fixed-lg" type="button" data-cmd="RADAR_ALT_ON">Вкл.</button>
+								<button class="btn btn-danger btn-fixed-lg" type="button" data-cmd="RADAR_ALT_TILT">Накл.</button>
+							</span>
+						</div>
+						<div class="input-group margin-top-xs">
+                            <span class="input-group-addon form-control">Фиксированный луч&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+							<span class="input-group-btn">
+								<button class="btn btn-info btn-fixed-lg" type="button" data-cmd="RADAR_BEAM_OFF">Выкл.</button>
+								<button class="btn btn-warning btn-fixed-lg" type="button" data-cmd="RADAR_BEAM_ON">Вкл.</button>
+							</span>
+						</div>
+                    </div>
+                </div>
+				
+				<div class="col-sm-12">
+                    <div class="card card-block">
+                        <h4 class="card-title">Фильтр</h4>
+                        <div class="input-group margin-top-xs">
+                            <span class="input-group-addon form-control">Помеха&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+							<span class="input-group-btn">
+								<button class="btn btn-danger btn-fixed-lg" type="button" data-cmd="FILTER_ACTIVE">Непр.</button>
+								<button class="btn btn-warning btn-fixed-lg" type="button" data-cmd="FILTER_MIXED">Прер.</button>
+								<button class="btn btn-info btn-fixed-lg" type="button" data-cmd="FILTER_PASSIVE">Пасс.</button>
+								<button class="btn btn-success btn-fixed-lg" type="button" data-cmd="FILTER_WEATHER">Метео</button>
+							</span>
+                        </div>
+                        <div class="input-group margin-top-xs">
+                            <span class="input-group-addon form-control">Специальное</span>
+							<span class="input-group-btn">
+								<button class="btn btn-warning btn-fixed-lg" type="button" data-cmd="FILTER_IFF">СРЗО</button>
+								<button class="btn btn-success btn-fixed-lg" type="button" data-cmd="FILTER_LOWSPEED">М.Ско.</button>
+								<button class="btn btn-info btn-fixed-lg" type="button" data-cmd="FILTER_SELFTEST">Тест</button>
+								<button class="btn btn-danger btn-fixed-lg" type="button" data-cmd="FILTER_CANCEL">Сброс</button>
+							</span>
+						</div>
+                    </div>
+                </div>
+				
+				<div class="col-sm-12">
+                    <div class="card card-block">
+                        <h4 class="card-title">ВПУ ГШ-23</h4>
+						<div class="input-group margin-top-xs">
+                            <span class="input-group-addon form-control">Тумблер питания пушки&nbsp;&nbsp;&nbsp;&nbsp;</span>
+							<span class="input-group-btn">
+								<button class="btn btn-danger btn-fixed-xl" type="button" data-cmd="GSH23_ON_OFF">Выкл./Вкл.</button>
+							</span>
+                        </div>
+                        <div class="input-group margin-top-xs">
+                            <span class="input-group-addon form-control">Перезарядка&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+							<span class="input-group-btn">
+								<button class="btn btn-info btn-fixed-lg" type="button" data-cmd="GUN_RELOAD_1">1.раз</button>
+								<button class="btn btn-warning btn-fixed-lg" type="button" data-cmd="GUN_RELOAD_2">2.раз</button>
+								<button class="btn btn-danger btn-fixed-lg" type="button" data-cmd="GUN_RELOAD_3">3.раз</button>
+							</span>
+						</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="/scripts/lib/jquery-2.2.4.js"></script>
+<script src="/scripts/lib/tether/js/tether.js"></script>
+<script src="/scripts/lib/bootstrap4/js/bootstrap.js"></script>
+
+<script src="/scripts/LayoutIntegration.js"></script>
+
+<script>activeLayout = "DCS-MiG-21bis";</script>
+
+</body>
+</html>
+<!--
+
+UHF/VHF controls
+
+Trim reset !!! (in red)
+Arm ground safety override switch
+
+MFD brightness increase/decrease
+
+Steer Point & Page knob
+
+UFC (up front controller)
+CDU
+TACAN knob
+ILS knobs
+
+Engine Instrument knob
+etc..
+
+Possibility to extract MFD ADI HSI Climb Altimeter AirSpeed
+
+-->

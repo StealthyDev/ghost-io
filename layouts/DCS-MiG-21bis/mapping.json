@@ -112,7 +112,23 @@
     "recording":"{LShift down}d{LShift up}"
   },
   {
-    "name":"FILTER_CANCEL",
-    "recording":"{LCtrl down}{LShift down}f{LShift up}{LCtrl up}"
+	"name":"FILTER_CANCEL",
+	"recording":"{LCtrl down}{LShift down}f{LShift up}{LCtrl up}"
+  },
+  {
+    "name":"GSH23_ON_OFF",
+	"recording":"{RShift down}.{RShift up}"
+  },
+  {
+    "name":"GUN_RELOAD_1",
+    "recording":"{LAlt down}1{LAlt up}"
+  },
+  {
+    "name":"GUN_RELOAD_2",
+	"recording": "{LAlt down}2{LAlt up}"
+  },
+  {
+    "name":"GUN_RELOAD_3",
+	"recording":"{LAlt down}3{LAlt up}"
   }
 ]
