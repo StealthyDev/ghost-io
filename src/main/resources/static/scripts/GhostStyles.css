@@ -30,6 +30,10 @@ body {
     width: 150px;
 }
 
+.btn-fixed-xxl {
+    width: 225px;
+}
+
 .margin-top-xs {
     margin-top: 0.5em;
 }

@@ -10,5 +10,89 @@
   {
     "name": "GEAR_DOWN",
     "recording": "{LShift down}g{LShift up}"
+  },
+  {
+    "name": "FLAPS_UP",
+    "recording": "{LShift down}f{LShift up}"
+  },
+  {
+    "name": "FLAPS_DOWN",
+    "recording": "f"
+  },
+  {
+    "name": "JAMMER_TOGGLE",
+    "recording": "-"
+  },
+  {
+    "name": "RWR_SEPARATE",
+    "recording": "{LAlt down}s{LAlt up}"
+  },
+  {
+    "name": "NVG_TOGGLE",
+    "recording": "{RShift down}h{RShift up}"
+  },
+  {
+    "name": "NVG_GAIN_UP",
+    "recording": "{RShift down}{RCtrl down}h{RShift up}{RCtrl up}"
+  },
+  {
+    "name": "NVG_GAIN_DOWN",
+    "recording": "{RShift down}{RAlt down}h{RShift up}{RAlt up}"
+  },
+  {
+    "name": "LASTE_PATH",
+    "recording": "2"
+  },
+  {
+    "name": "LASTE_HDG",
+    "recording": "3"
+  },
+  {
+    "name": "LASTE_BANK",
+    "recording": "4"
+  },
+  {
+    "name": "AUTOPILOT_TOGGLE",
+    "recording": "a"
+  },
+  {
+    "name": "PINKY_FWD",
+    "recording": "{LAlt down}p{LAlt up}"
+  },
+  {
+    "name": "PINKY_MID",
+    "recording": "{LShift down}p{LShift up}"
+  },
+  {
+    "name": "PINKY_AFT",
+    "recording": "{LCtrl down}p{LCtrl up}"
+  },
+  {
+    "name": "POSITION_FLASH",
+    "recording": "{RALt down}{RShift down}p{RShift up}{RALt up}"
+  },
+  {
+    "name": "POSITION_STEADY",
+    "recording": "{RALt down}p{RALt up}"
+  },
+  {
+    "name": "COLLISION_TOGGLE",
+    "recording": "{LShift down}{LCtrl down}c{LCtrl down}{LShift up}"
+  },
+  {
+    "name": "NOSE_TOGGLE",
+    "recording": "{LShift down}{LCtrl down}n{LCtrl down}{LShift up}"
+  },
+  {
+    "name": "ALL_LIGHTS_ON",
+    "recording": "l"
+  },
+  {
+    "name": "SIGNAL_TOGGLE",
+    "recording": "{LShift down}{LCtrl down}s{LCtrl down}{LShift up}"
+  },
+  {
+    "name": "ACCEL_COMP_TOGGLE",
+    "recording": "{LShift down}{LCtrl down}a{LCtrl down}{LShift up}"
   }
 ]
