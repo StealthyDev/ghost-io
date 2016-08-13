@@ -7,10 +7,18 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <link rel="stylesheet" href="/scripts/lib/bootstrap4/css/bootstrap.css">
+    <link rel="stylesheet" href="/scripts/lib/font-awesome-4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="/scripts/GhostStyles.css">
 </head>
 <body>
 <div class="container">
+    <div class="text-xs-center">
+        <H1>
+            <a href="/"><i class="fa fa-home"></i></a>
+            Ghost IO
+        </H1>
+        (Credits: StealthyNeo / <a href="https://github.com/StealthyDev/ghost-io">Project</a>)
+    </div>
     <div class="row margin-top-sm">
         <div class="col-sm-6">
             <div class="card card-block">
@@ -120,6 +128,26 @@
 								<button class="btn btn-success btn-fixed-lg" type="button" data-cmd="FILTER_LOWSPEED">L.Spd</button>
 								<button class="btn btn-info btn-fixed-lg" type="button" data-cmd="FILTER_SELFTEST">Test</button>
 								<button class="btn btn-danger btn-fixed-lg" type="button" data-cmd="FILTER_CANCEL">Cancl</button>
+							</span>
+						</div>
+                    </div>
+                </div>
+				
+				<div class="col-sm-12">
+                    <div class="card card-block">
+                        <h4 class="card-title">Internal GSh-23</h4>
+						<div class="input-group margin-top-xs">
+                            <span class="input-group-addon form-control">Gun power switch&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+							<span class="input-group-btn">
+								<button class="btn btn-danger btn-fixed-xl" type="button" data-cmd="GSH23_ON_OFF">Off / On</button>
+							</span>
+                        </div>
+                        <div class="input-group margin-top-xs">
+                            <span class="input-group-addon form-control">Reload / Unjam</span>
+							<span class="input-group-btn">
+								<button class="btn btn-info btn-fixed-lg" type="button" data-cmd="GUN_RELOAD_1">1st</button>
+								<button class="btn btn-warning btn-fixed-lg" type="button" data-cmd="GUN_RELOAD_2">2nd</button>
+								<button class="btn btn-danger btn-fixed-lg" type="button" data-cmd="GUN_RELOAD_3">3rd</button>
 							</span>
 						</div>
                     </div>
