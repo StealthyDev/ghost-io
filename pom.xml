@@ -5,7 +5,7 @@
 
     <groupId>com.stealthydev.open.ghostio</groupId>
     <artifactId>ghost-io</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.0-alpha</version>
     <packaging>jar</packaging>
 
     <name>ghost-io</name>
